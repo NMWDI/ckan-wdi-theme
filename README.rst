@@ -1,67 +1,64 @@
-.. You should enable this project on travis-ci.org and coveralls.io to make
+You should enable this project on travis-ci.org and coveralls.io to make
    these badges work. The necessary Travis and Coverage config files have been
    generated for you.
 
-.. image:: https://travis-ci.org/hbarrett/ckanext-wdi_theme.svg?branch=master
-    :target: https://travis-ci.org/hbarrett/ckanext-wdi_theme
+.. image:: https://travis-ci.org/hbarrett/ckan-wdi-theme.svg?branch=master
+    :target: https://travis-ci.org/hbarrett/ckan-wdi-theme
 
-.. image:: https://coveralls.io/repos/hbarrett/ckanext-wdi_theme/badge.svg
-  :target: https://coveralls.io/r/hbarrett/ckanext-wdi_theme
+.. image:: https://coveralls.io/repos/hbarrett/ckan-wdi-theme/badge.svg
+  :target: https://coveralls.io/r/hbarrett/ckan-wdi-theme
 
-.. image:: https://pypip.in/download/ckanext-wdi_theme/badge.svg
-    :target: https://pypi.python.org/pypi//ckanext-wdi_theme/
+.. image:: https://pypip.in/download/ckan-wdi-theme/badge.svg
+    :target: https://pypi.python.org/pypi//ckan-wdi-theme/
     :alt: Downloads
 
-.. image:: https://pypip.in/version/ckanext-wdi_theme/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-wdi_theme/
+.. image:: https://pypip.in/version/ckan-wdi-theme/badge.svg
+    :target: https://pypi.python.org/pypi/ckan-wdi-theme/
     :alt: Latest Version
 
-.. image:: https://pypip.in/py_versions/ckanext-wdi_theme/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-wdi_theme/
+.. image:: https://pypip.in/py_versions/ckan-wdi-theme/badge.svg
+    :target: https://pypi.python.org/pypi/ckan-wdi-theme/
     :alt: Supported Python versions
 
-.. image:: https://pypip.in/status/ckanext-wdi_theme/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-wdi_theme/
+.. image:: https://pypip.in/status/ckan-wdi-theme/badge.svg
+    :target: https://pypi.python.org/pypi/ckan-wdi-theme/
     :alt: Development Status
 
-.. image:: https://pypip.in/license/ckanext-wdi_theme/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-wdi_theme/
+.. image:: https://pypip.in/license/ckan-wdi-theme/badge.svg
+    :target: https://pypi.python.org/pypi/ckan-wdi-theme/
     :alt: License
 
 =============
-ckanext-wdi_theme
+ckan-wdi-theme
 =============
 
-.. Put a description of your extension here:
-   What does it do? What features does it have?
-   Consider including some screenshots or embedding a video!
-
+Bootstrap theme for CKAN
 
 ------------
 Requirements
 ------------
 
-For example, you might want to mention here which versions of CKAN this
-extension works with.
+In development for 2.8
 
 
 ------------
 Installation
 ------------
+WARNING!
+This addon is still in development!
+Use at your onw risk!
 
-.. Add any additional install steps to the list below.
-   For example installing any non-Python dependencies or adding any required
-   config settings.
 
-To install ckanext-wdi_theme:
+
+To install ckan-wdi-theme:
 
 1. Activate your CKAN virtual environment, for example::
 
      . /usr/lib/ckan/default/bin/activate
 
-2. Install the ckanext-wdi_theme Python package into your virtual environment::
+2. Install the ckan-wdi-theme Python package into your virtual environment::
 
-     pip install ckanext-wdi_theme
+     pip install ckan-wdi-theme
 
 3. Add ``wdi_theme`` to the ``ckan.plugins`` setting in your CKAN
    config file (by default the config file is located at
@@ -87,11 +84,11 @@ Document any optional config settings here. For example::
 Development Installation
 ------------------------
 
-To install ckanext-wdi_theme for development, activate your CKAN virtualenv and
+To install ckan-wdi-theme for development, activate your CKAN virtualenv and
 do::
 
-    git clone https://github.com/hbarrett/ckanext-wdi_theme.git
-    cd ckanext-wdi_theme
+    git clone https://github.com/hbarrett/ckan-wdi-theme.git
+    cd ckan-wdi-theme
     python setup.py develop
     pip install -r dev-requirements.txt
 
@@ -111,11 +108,11 @@ coverage installed in your virtualenv (``pip install coverage``) then run::
 
 
 ---------------------------------
-Registering ckanext-wdi_theme on PyPI
+Registering ckan-wdi-theme on PyPI
 ---------------------------------
 
-ckanext-wdi_theme should be availabe on PyPI as
-https://pypi.python.org/pypi/ckanext-wdi_theme. If that link doesn't work, then
+ckan-wdi-theme should be availabe on PyPI as
+https://pypi.python.org/pypi/ckan-wdi-theme. If that link doesn't work, then
 you can register the project on PyPI for the first time by following these
 steps:
 
@@ -140,10 +137,10 @@ steps:
 
 
 ----------------------------------------
-Releasing a New Version of ckanext-wdi_theme
+Releasing a New Version of ckan-wdi-theme
 ----------------------------------------
 
-ckanext-wdi_theme is availabe on PyPI as https://pypi.python.org/pypi/ckanext-wdi_theme.
+ckan-wdi-theme is availabe on PyPI as https://pypi.python.org/pypi/ckan-wdi-theme.
 To publish a new version to PyPI follow these steps:
 
 1. Update the version number in the ``setup.py`` file.
