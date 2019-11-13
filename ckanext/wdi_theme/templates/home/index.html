@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>NM Water Data Initiative</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/wdi.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI=" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    integrity="sha256-4hqlsNP9KM6+2eA8VUT0kk4RsMRTeS7QGHIM+MZ5sLY=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+</head>
+
+<body >
+    {%- block header %}
+    {% include "header.html" %}
+  {% endblock -%}
+
+  <!-- <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/"><img
+            style="float: left;    /* width: 40px; */    height: 49px;    margin-top: -15px;    margin-right: 10px;"
+            src="{{ g.site_logo }}" alt="LOGO" title="LOGO">
+          <span class="titletext">{{ g.site_title }}</span></a>
+      </div>
+      <ul class="nav navbar-nav fiveptfont">
+        <li><a href="/">Home</a></li>
+        <li><a href="/dataset">Datasets</a></li>
+        <li><a href="/organization">Organizations</a></li>
+        <li><a href="/group">Groups</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+      <ul class="nav navbar-nav" style="float: right;">
+        <li><a href="/user/login">Login</a></li>
+      </ul>
+    </div>
+  </nav> -->
+
+  <div class="your-class fullwidth">
+    <div style="background-color: aqua;"><img class="waterimage" src="/water1.jpg">
+      <div class="slide-text-block">
+        <h2><span class="panblack">{{ g.site_description }}</span></h2><br><span
+          class="panwhite">{{ g.site_intro_text }}</span>
+      </div>
+    </div>
+    <div style="background-color: rgb(49, 199, 29);"><img class="waterimage" src="/water2.jpg">
+      <div class="slide-text-block">
+        <h2><span class="panblack">{{ g.site_description }}</span></h2><br><span
+          class="panwhite">{{ g.site_intro_text }}</span>
+      </div>
+    </div>
+    <div style="background-color: rgb(221, 70, 0);"><img class="waterimage" src="/water3.jpg">
+      <div class="slide-text-block">
+        <h2><span class="panblack">{{ g.site_description }}</span></h2><br><span
+          class="panwhite">{{ g.site_intro_text }}</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- start serach -->
+  <div class="container searchcontainer">
+    <form action="/dataset">
+      <div class="input-group">
+        <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span> -->
+        <input id="searchdatasets" type="text" class="form-control searchbar"  name="q"
+          placeholder="Search Datasets">
+          <span class="input-group-btn">
+              <button class="btn btn-default" type="submit">
+                  <i class="glyphicon glyphicon-search"></i>
+              </button>
+            </span>
+      </div>
+
+    </form>
+
+  </div>
+  <!-- end search -->
+
+
+
+
+
+
+  <div class="main-browse">
+    <div class="container">
+      <div class="row">
+        <div class="span12 col1">
+          <div class="module-content box topic">
+            <div class="strikethrough-wrapper">
+              <h2 class="heading"><a href="/group">Topics</a></h2>
+              <span class="heading-explanation">
+                As datasets are published, they are tagged with categories so you can learn about popular topics.
+                Explore them below.
+              </span>
+            </div>
+            <!-- <a href="/group/1" class="browse-group">
+                    <img class="browse-group-image" alt="" src="/1.svg">
+                    <div class="browse-group-title">
+                      <div class="browse-group-display-name">
+                        Topic 1
+                      </div>
+                    </div>
+                  </a> -->
+
+            {% for group in h.wdi_theme_most_popular_groups() %}
+
+
+            <a href="/group/{{group.name}}" class="browse-group">
+              <img class="browse-group-image" alt="" src="{{group.image_display_url}}">
+              <div class="browse-group-title">
+                <div class="browse-group-display-name">
+                  {{group.display_name}}
+                </div>
+              </div>
+            </a>
+            {% endfor %}
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <script>
+    $(document).ready(function () {
+      $('.your-class').slick({
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        infinite: true,
+        speed: 1000,
+        fade: true,
+        cssEase: 'linear',
+        autoplaySpeed: 9000,
+      });
+    });
+
+//     $(document).on('keypress',function(e) {
+//     var $focused = $(':focus');
+//     if(e.which == 13) {
+//         alert('You pressed enter!');
+
+//         console.log($focused)
+//     }
+// });
+
+  </script>
+</body>
+
+</html>
