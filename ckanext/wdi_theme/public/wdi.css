@@ -2,6 +2,45 @@ body{
     font-family: 'Quicksand', sans-serif;
 }
 
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+.datasets_links_div {
+    position: absolute;
+    top: 9px;
+    right: 10px;
+}
+.site-footer, .site-footer label, .site-footer small {
+    color: #ccdee3;
+}
+.attribution .ckan-footer-logo {
+    display: block;
+    width: 68px;
+    height: 21px;
+    margin-top: 2px;
+    background: url(../../../base/images/ckan-logo-footer.png) no-repeat top left;
+    text-indent: -900em;
+}
+html > body > footer > div > div > div > ul > li > a{
+    color:#d6e4f1;
+}
+.site-footer {
+    margin-bottom: initial;
+    padding: 10px 0;
+    color: #ffffff;
+    background: #005d7a url(../../../base/images/bg.png);
+    padding: 20px 0;
+}
+
+.site-footer-bottom {
+
+    position: absolute;
+    /* bottom: 0; */
+    width: 100%;
+    background: #337ab7;
+}
+
 .navbar .nav > li > a {
     float: none;
     padding: 15px 15px 10px;

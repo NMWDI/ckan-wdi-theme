@@ -110,17 +110,24 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-96.498295,-211.71762)">
+    <rect
+       style="opacity:1;fill:#a8adac;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:6.98062534;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect1570"
+       width="640.17859"
+       height="542.41071"
+       x="-26.716"
+       y="139.70316" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:130.02391052px;line-height:100%;font-family:'The Bold Font';-inkscape-font-specification:'The Bold Font, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#00adc8;fill-opacity:1;stroke:#000000;stroke-width:6.98062515;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       x="113.35825"
-       y="419.26685"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:130.02391052px;line-height:100%;font-family:'The Bold Font';-inkscape-font-specification:'The Bold Font, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:6.98062515;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
+       x="107.74271"
+       y="420.54449"
        id="text1492"
-       transform="scale(0.95398466,1.0482349)"><tspan
+       transform="scale(0.95398465,1.0482349)"><tspan
          sodipodi:role="line"
          id="tspan1490"
-         x="113.35825"
-         y="419.26685"
-         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:130.0249939px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#00adc8;fill-opacity:1;stroke:#000000;stroke-width:6.98062515;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">TEST 1</tspan></text>
+         x="107.74271"
+         y="420.54449"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:130.0249939px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:6.98062515;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;">TEST 1</tspan></text>
   </g>
 </svg>

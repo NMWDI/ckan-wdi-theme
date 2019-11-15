@@ -20,7 +20,7 @@
 
 </head>
 
-<body >
+<body style="display:none">
     {%- block header %}
     {% include "header.html" %}
   {% endblock -%}
@@ -47,19 +47,19 @@
   </nav> -->
 
   <div class="your-class fullwidth">
-    <div style="background-color: aqua;"><img class="waterimage" src="/water1.jpg">
+    <div><img class="waterimage" src="/water1.jpg">
       <div class="slide-text-block">
         <h2><span class="panblack">{{ g.site_description }}</span></h2><br><span
           class="panwhite">{{ g.site_intro_text }}</span>
       </div>
     </div>
-    <div style="background-color: rgb(49, 199, 29);"><img class="waterimage" src="/water2.jpg">
+    <div><img class="waterimage" src="/water2.jpg">
       <div class="slide-text-block">
         <h2><span class="panblack">{{ g.site_description }}</span></h2><br><span
           class="panwhite">{{ g.site_intro_text }}</span>
       </div>
     </div>
-    <div style="background-color: rgb(221, 70, 0);"><img class="waterimage" src="/water3.jpg">
+    <div><img class="waterimage" src="/water3.jpg">
       <div class="slide-text-block">
         <h2><span class="panblack">{{ g.site_description }}</span></h2><br><span
           class="panwhite">{{ g.site_intro_text }}</span>
@@ -131,7 +131,9 @@
     </div>
   </div>
 
-  </div>
+  {%- block footer %}
+  {% include "footer.html" %}
+  {% endblock -%}
   <script>
     $(document).ready(function () {
       $('.your-class').slick({
@@ -144,6 +146,9 @@
         cssEase: 'linear',
         autoplaySpeed: 9000,
       });
+
+      $( "body" ).show();
+
     });
 
 //     $(document).on('keypress',function(e) {
@@ -156,6 +161,7 @@
 // });
 
   </script>
+
 </body>
 
 </html>
