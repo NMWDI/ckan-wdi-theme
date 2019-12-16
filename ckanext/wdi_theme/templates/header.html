@@ -87,12 +87,25 @@
     </div>
     <ul class="nav navbar-nav fiveptfont">
       <li><a href="/">Home</a></li>
-      <li><a href="/dataset">Datasets</a></li>
-      <li><a href="/organization">Organizations</a></li>
-      <li><a href="/group">Topics</a></li>
+      <li><a href="/map">Map</a></li>
+      <li><a href="/dataset">Data</a></li>
+      <!-- <li><a href="/organization">Organizations</a></li>
+      <li><a href="/group">Topics</a></li> -->
       <li><a href="/about">About</a></li>
+      <li><a href="/team">Team</a></li>
+      <li><a href="/news">News</a></li>
+      <li><a href="/faq">FAQ</a></li>
+      <li><a href="/contact">Contact</a></li>
+      
     </ul>
+
     <ul class="nav navbar-nav" style="float: right;">
+
+
+
+
+
+      
       {% block wdi_account_container_content %}
       {% if c.userobj %}
       {% if c.userobj.sysadmin %}
@@ -159,6 +172,10 @@
 
 <script>
   $(document).ready(function () {
+    // $('#dataset-map').bind('heightChange', function(){
+    //     alert('xxx');
+    // });
+
     $("#newview").click(function () {
       console.log("test")
       id="newview"

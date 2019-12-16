@@ -1,0 +1,28 @@
+{% extends "page.html" %}
+
+{% block breadcrumb_content %}
+  <li class="active">{% link_for _('News'), controller='ckanext.wdi_theme.controller:WDIController', action='news' %}</li>
+{% endblock %}
+
+{% block primary %}
+  <article class="module">
+    <div class="module-content">
+      {% block about %}
+
+          <h1 class="page-heading">News</h1>
+
+          
+          <ol>
+            <li> <a href="/reports">Reports</a></li>
+            <li> <a href="/photos">Photos</a></li>
+            <li> <a href="/events">Events</a></li>
+          </ol> 
+
+      
+
+      {% endblock %}
+    </div>
+  </article>
+{% endblock %}
+
+{% block secondary %}{% endblock %}
